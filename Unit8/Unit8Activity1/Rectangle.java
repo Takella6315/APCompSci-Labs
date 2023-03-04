@@ -15,7 +15,7 @@ public class Rectangle {
         setWidth(width);
         setLength(length);
     }
-
+    //sets width of the rectangle
     public void setWidth(int width) {
         if (width >= 1 && width <= 30) {
             this.width = width;
@@ -23,7 +23,7 @@ public class Rectangle {
             System.out.println("Invalid width value. Width must be between 1 and 30");
         }
     }
-
+    //sets the length of the rectangle
     public void setLength(int length) {
         if (length >= 1 && length <= 30) {
             this.length = length;
@@ -31,15 +31,15 @@ public class Rectangle {
             System.out.println("Invalid length value. Length must be between 1 and 30");
         }
     }
-
+    //returns width
     public int getWidth() {
         return width;
     }
-
+    //returns length
     public int getLength() {
         return length;
     }
-
+    //This method draws the rectangle using the symbol the users indicate
     public void drawRectangle(char symbol) {
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < width; j++) {
@@ -48,11 +48,11 @@ public class Rectangle {
             System.out.println();
         }
     }
-
+    //returns area
     public int getArea() {
         return length * width;
     }
-
+    //returns perimeter
     public int getPerimeter() {
         return 2 * (length + width);
     }
@@ -68,7 +68,6 @@ public class Rectangle {
             System.out.print("Enter rectangle's width and length separated by space: ");
             width = input.nextInt();
             length = input.nextInt();
-
             System.out.print("Enter character to draw the rectangle: ");
             symbol = input.next().charAt(0);
 

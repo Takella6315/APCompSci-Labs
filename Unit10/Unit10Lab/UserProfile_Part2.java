@@ -1,3 +1,8 @@
+/**
+ * Checks password to see if they are weak using a runTimeException
+ * @author Teja Akella
+ * 
+ */
 package Unit10.Unit10Lab;
 
 public class UserProfile_Part2 {
@@ -8,10 +13,14 @@ public class UserProfile_Part2 {
     public UserProfile_Part2(String firstName, String lastName, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
-        setPassword(password);
+        try {
+            setPassword(password);
+        } catch (WeakPasswordRuntimeException e) {
+            System.out.println("Failed to set password: " + e.getMessage());
+        }
     }
 
-    public void setPassword(String newPassword) {
+    public void setPassword(String newPassword) throws WeakPasswordRuntimeException {
         if (checkPassword(newPassword)) {
             this.password = newPassword;
         } else {
@@ -40,20 +49,9 @@ public class UserProfile_Part2 {
         return true;
     }
 
-    public static void main(String[] args) {
-        UserProfile_Part2 user1 = new UserProfile_Part2("John", "Doe", "password123!");
-        System.out.println(user1.getPassword());
-
-        try {
-            UserProfile_Part2 user2 = new UserProfile_Part2("Jane", "Doe", "weak");
-        } catch (WeakPasswordRuntimeException e) {
-            System.out.println("Failed to create user: " + e.getMessage());
-        }
-    }
-}
-
 class WeakPasswordRuntimeException extends RuntimeException {
     public WeakPasswordRuntimeException(String message) {
         super(message);
     }
+}
 }

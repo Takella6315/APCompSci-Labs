@@ -1,3 +1,8 @@
+/**
+ * Checks password to see if they are weak using a weakPasswordException
+ * @author Teja AKella
+ * 
+ */
 package Unit10.Unit10Lab;
 
 public class UserProfile_Part1 {
@@ -42,17 +47,6 @@ public class UserProfile_Part1 {
             return false;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        UserProfile_Part1 user1 = new UserProfile_Part1("John", "Doe", "password123!");
-        System.out.println(user1.getPassword());
-
-        try {
-            UserProfile_Part1 user2 = new UserProfile_Part1("Jane", "Doe", "weak");
-        } catch (WeakPasswordException e) {
-            System.out.println("Failed to create user: " + e.getMessage());
-        }
     }
 }
 

@@ -1,3 +1,8 @@
+/**
+ * 
+ * This program finds the longest string, the shortest, the longest in a column, the shortest in a column, and the longest and shortest in a row
+ * @author Teja Akella
+ */
 package Unit12.Unit12Activity1;
 
 import java.util.Arrays;

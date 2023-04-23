@@ -79,7 +79,7 @@ public class Unit12Lab1 {
 
     public boolean cancel(int row, int seat) {
         if (row < 0 || row >= ROWS || seat < 0 || seat >= SEATS_PER_ROW) {
-            
+            return false;
         }
         if (seats[row][seat] == RESERVED_SEAT_CHAR) {
             seats[row][seat] = EMPTY_SEAT_CHAR;
@@ -126,9 +126,7 @@ public class Unit12Lab1 {
             }
         }
         
-        System.out.printf("There are %d premium seats reserved\n", numPremiumReserved);
-        System.out.printf("There are %d general seats reserved\n", numGeneralReserved);
-        System.out.printf("Total cost: $%.2f\n", totalCost);
+        
         
         return totalCost;
 

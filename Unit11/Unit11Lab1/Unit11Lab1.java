@@ -12,6 +12,8 @@ public class Unit11Lab1 {
 
 
     public static void main(String[] args) {
+
+        
         Random rand = new Random();
         int n = 6;
         int[] data = new int[n];

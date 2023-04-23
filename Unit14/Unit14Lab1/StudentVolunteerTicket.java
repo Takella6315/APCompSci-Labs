@@ -1,3 +1,8 @@
+/**
+ * This class inherits the ticket class and has a discount for student volunteers
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Lab1;
 
 public class StudentVolunteerTicket extends StudentAdvanceTicket {
@@ -6,7 +11,6 @@ public class StudentVolunteerTicket extends StudentAdvanceTicket {
     public StudentVolunteerTicket(double price, String concertDate, String performerName, String venueName, int numDaysBefore, int hoursVolunteered) {
         super(price, concertDate, performerName, venueName, numDaysBefore);
         volunteerHours = hoursVolunteered;
-        System.out.println("Dec 12, 7:00 PM" + " " + performerName + " " + venueName + " \n(" + numDaysBefore + " days in advance)");
 
     }
 
@@ -22,10 +26,12 @@ public class StudentVolunteerTicket extends StudentAdvanceTicket {
         }
     }
 
+
+
     
     public String toString() {
-        String str = super.toString();
-        return str + " volunteered " + volunteerHours + " hours";
+        
+        return concertDate + " " + performerName + " " + venueName + " \n(" + numDaysBefore + " days in advance)" + " serial number: " + serialNumber + " price: " + getPrice() + " \"student ID required\"" + " volunteered " + volunteerHours + " hours";
     }
 
     

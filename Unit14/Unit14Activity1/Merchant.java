@@ -1,3 +1,8 @@
+/**
+ * This is the Merchant class which has all of the traits as the player class but also has a money and goods trait
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Activity1;
 
 import java.util.ArrayList;
@@ -27,5 +32,6 @@ public class Merchant extends Player {
         goods.add(item);
         money -= 5; 
         System.out.println("Bought " + item + " for 10 credits!");
+        System.out.println("You now have this much money: " + money);
     }
 }

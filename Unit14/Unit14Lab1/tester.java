@@ -1,3 +1,8 @@
+/**
+ * This class utilizes all of these classes and prints out all of the required ticket info
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Lab1;
 
 public class tester {
@@ -10,9 +15,9 @@ public class tester {
 
         //Advance Ticket
         System.out.println("Advance Tickets");
-        AdvanceTicket advance1 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 1);
-        AdvanceTicket advance2 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 5);
-        AdvanceTicket advance3 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 10);
+        AdvanceTicket advance1 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 12);
+        AdvanceTicket advance2 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 13);
+        AdvanceTicket advance3 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 14);
         AdvanceTicket advance4 = new AdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 15);
         System.out.println(advance1);
         System.out.println(advance2);
@@ -22,8 +27,8 @@ public class tester {
 
         //Student Advance tickets
         System.out.println("Student Advance Tickets");
-        StudentAdvanceTicket studentAdvance1 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 1);
-        StudentAdvanceTicket studentAdvance2 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 5);
+        StudentAdvanceTicket studentAdvance1 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 12);
+        StudentAdvanceTicket studentAdvance2 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 13);
         StudentAdvanceTicket studentAdvance3 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 10);
         StudentAdvanceTicket studentAdvance4 = new StudentAdvanceTicket(50, "Dec 12, 7:00 PM", "Youth Orchestra: Peter and the Wolf", "concert Hall", 15);
         System.out.println(studentAdvance1);

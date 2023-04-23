@@ -1,3 +1,7 @@
+/**
+ * This is the base pet class which has the main characteristics - name, weight, and age.
+ * @author Teja Akella
+ */
 package Unit14.Unit14Activity2;
 
 public class pets {

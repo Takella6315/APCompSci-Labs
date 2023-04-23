@@ -1,3 +1,8 @@
+/**
+ * This is the base ticket class which has all of the main attributes of a ticket - Serial number, price, preformerName, venueName, and data
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Lab1;
 
 public class Ticket {

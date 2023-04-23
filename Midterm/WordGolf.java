@@ -1,3 +1,8 @@
+/**
+ * This game lets the user type in words, which are scored randomy, and the user has to make it to the target.
+ * @author Teja Akella
+ * 
+ */
 import java.util.Scanner;
 
 public class WordGolf {

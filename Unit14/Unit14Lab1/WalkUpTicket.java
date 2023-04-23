@@ -1,3 +1,8 @@
+/**
+ * This class inherits the ticket class and has a premium on the day of the concert
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Lab1;
 
 public class WalkUpTicket extends Ticket {
@@ -11,7 +16,7 @@ public class WalkUpTicket extends Ticket {
     @Override
     public String toString(){
 
-        return "Dec 12, 7:00 PM" + " " + performerName + " " + venueName + " \n(" + numDaysBefore + " days in advance)" + " serial number: " + serialNumber + " price: " + price;
+        return concertDate + " " + performerName + " " + venueName + " \n(" + numDaysBefore + " days in advance)" + " serial number: " + serialNumber + " price: " + price;
 
     }
 }

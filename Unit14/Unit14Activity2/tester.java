@@ -1,3 +1,8 @@
+/**
+ * This is the Tester class which utilizes all of the animal classes to print out their name, weight, age, and the sound that they make
+ * @author Teja Akella
+ * 
+ */
 package Unit14.Unit14Activity2;
 
 import java.util.ArrayList;

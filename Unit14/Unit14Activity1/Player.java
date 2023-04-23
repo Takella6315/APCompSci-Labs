@@ -1,3 +1,7 @@
+/**
+ * This is the base player class which has the main characteristics - name, lives, score, and credits
+ * @author Teja Akella
+ */
 package Unit14.Unit14Activity1;
 
 public class Player {

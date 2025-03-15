@@ -1,3 +1,7 @@
+/**
+ * This program uses merge sort and recursion to sort through the arrays
+ * @author Teja Akella
+ */
 package Unit16.Unit16Activity1;
 
 import java.util.Arrays;
